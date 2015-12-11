@@ -1,5 +1,5 @@
-TAG = archlinux-spiderfoot
-NAME = spiderfoot
+NAME = $(shell basename `pwd | sed -e 's|docker-||g'`)
+TAG = "libcrack/$(NAME)"
 
 all: help
 
@@ -10,7 +10,7 @@ build:
 	docker build -t $(TAG) .
 
 run:
-	docker run -d -p 8000:8000 --name $(NAME) $(TAG)
+	docker run -d -p 8000:80 --name $(NAME) $(TAG)
 
 compose:
 	docker-compose up
