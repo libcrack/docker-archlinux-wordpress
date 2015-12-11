@@ -3,7 +3,7 @@
 Build the image:
 
 ```bash
-docker build -t archlinux-wordpress .
+docker-compose up
 ```
 
 Run the container:
