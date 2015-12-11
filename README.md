@@ -1,5 +1,7 @@
 # Docker WordPress container
 
+[![](https://badge.imagelayers.io/libcrack/archlinux-wordpress:latest.svg)](https://imagelayers.io/?images=libcrack/archlinux-wordpress:latest 'libcrack/archlinux-wordpress')
+
 Build the image:
 
 ```bash
