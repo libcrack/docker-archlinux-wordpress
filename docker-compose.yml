@@ -1,9 +1,9 @@
 wordpress:
   image: wordpress
-  ports:
-    - 8000:80
   links:
     - db:mysql
+  ports:
+    - 8000:80
 
 db:
   image: mariadb
