@@ -1,4 +1,4 @@
-wordpress:
+wp:
   image: wordpress
   links:
     - db:mysql
